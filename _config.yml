@@ -1,0 +1,27 @@
+title: MilanPM Tech Blog
+description: AI, Image Processing, DICOM/PACS, PLC and Software Engineering Learning Notes
+url: "https://milanpm.github.io"
+baseurl: ""
+
+lang: en-US
+timezone: Asia/Seoul
+
+theme: minima
+
+show_excerpts: true
+
+header_pages:
+  - about.md
+  - projects.md
+  - privacy.md
+  - contact.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+minima:
+  date_format: "%Y-%m-%d"
+
+exclude:
+  - README.md
