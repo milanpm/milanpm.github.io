@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-# MilanPM Tech Blog
+# Alex Tech Blog
 
 Welcome to my technology and software engineering blog.
 

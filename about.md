@@ -6,7 +6,7 @@ permalink: /about/
 
 # About
 
-Hello, and welcome to MilanPM Tech Blog.
+Hello, and welcome to Alex Tech Blog.
 
 I am a software engineer with experience in industrial and medical software development.
 

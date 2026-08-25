@@ -6,7 +6,7 @@ permalink: /contact/
 
 # Contact
 
-Thank you for visiting MilanPM Tech Blog.
+Thank you for visiting Alex Tech Blog.
 
 If you would like to discuss software engineering, image processing, DICOM/PACS, artificial intelligence, or industrial automation, you can contact me through GitHub.
 

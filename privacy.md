@@ -8,7 +8,7 @@ permalink: /privacy/
 
 Last updated: August 25, 2026
 
-MilanPM Tech Blog respects the privacy of its visitors.
+Alex Tech Blog respects the privacy of its visitors.
 
 This Privacy Policy explains what information may be collected when you visit this website and how that information may be used.
 
@@ -49,13 +49,13 @@ This website may use or link to third-party services, including GitHub and other
 
 These third-party services have their own privacy policies and data handling practices.
 
-MilanPM Tech Blog is not responsible for the privacy practices of external websites.
+Alex Tech Blog is not responsible for the privacy practices of external websites.
 
 ## External Links
 
 Articles on this website may contain links to external websites.
 
-Visitors should review the privacy policies of those websites when leaving MilanPM Tech Blog.
+Visitors should review the privacy policies of those websites when leaving Alex Tech Blog.
 
 ## Changes to This Privacy Policy
 
