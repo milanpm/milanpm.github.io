@@ -2,7 +2,7 @@
 layout: post
 title: "Learning Digital Image Processing with Python and OpenCV"
 date: 2026-08-25 23:30:00 +0900
-categories: [Image Processing, OpenCV]
+categories: [image-processing, opencv]
 tags: [Python, OpenCV, Image Processing, Computer Vision]
 ---
 
