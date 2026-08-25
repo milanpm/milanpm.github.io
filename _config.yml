@@ -19,9 +19,26 @@ header_pages:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 minima:
   date_format: "%Y-%m-%d"
 
 exclude:
   - README.md
+
+# SEO
+author:
+  name: Alex
+
+social:
+  name: Alex
+  links:
+    - https://github.com/milanpm
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author: Alex
