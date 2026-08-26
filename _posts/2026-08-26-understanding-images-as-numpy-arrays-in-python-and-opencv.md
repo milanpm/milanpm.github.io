@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding Images as NumPy Arrays in Python and OpenCV"
 date: 2026-08-26
-categories: [Image Processing, OpenCV]
+categories: [image-processing, opencv]
 tags: [python, opencv, numpy, image-processing, computer-vision]
 ---
 
@@ -76,13 +76,13 @@ In an 8-bit grayscale image, each pixel normally has a value between:
 
 The value represents brightness.
 
-| Pixel Value | Meaning |
-|---:|---|
-| 0 | Black |
-| 64 | Dark gray |
-| 128 | Medium gray |
-| 192 | Light gray |
-| 255 | White |
+| Pixel Value | Meaning     |
+| ----------: | ----------- |
+|           0 | Black       |
+|          64 | Dark gray   |
+|         128 | Medium gray |
+|         192 | Light gray  |
+|         255 | White       |
 
 A smaller value represents a darker pixel, while a larger value represents a brighter pixel.
 
