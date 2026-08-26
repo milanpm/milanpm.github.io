@@ -28,8 +28,7 @@ exclude:
   - README.md
 
 # SEO
-author:
-  name: Alex
+author: Alex
 
 social:
   name: Alex
