@@ -24,8 +24,54 @@ layout: default
     {{ content }}
   </div>
 
+  <nav class="post-navigation" aria-label="Post navigation">
+    <div class="post-navigation-prev">
+      {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}">
+        <span class="post-navigation-label">← Previous</span>
+        <span class="post-navigation-title">
+          {{ page.previous.title }}
+        </span>
+      </a>
+      {% endif %}
+    </div>
+
+    <div class="post-navigation-next">
+      {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}">
+        <span class="post-navigation-label">Next →</span>
+        <span class="post-navigation-title">
+          {{ page.next.title }}
+        </span>
+      </a>
+      {% endif %}
+    </div>
+  </nav>
+
   {% include giscus.html %}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
 </article>
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+  ↑
+</button>
+
+<script>
+  const backToTopButton = document.getElementById("back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+      backToTopButton.classList.add("show");
+    } else {
+      backToTopButton.classList.remove("show");
+    }
+  });
+
+  backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
