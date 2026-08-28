@@ -429,17 +429,17 @@ The most important idea from this lesson is simple:
 
 ## Next Step
 
-Now that we understand how images are represented as NumPy arrays, the next step is to load a real image with OpenCV and inspect its properties.
+Now that we understand how images are represented as NumPy arrays, the next step is to save image data as an image file.
 
 In the next lesson, we will explore:
 
-- `cv2.imread()`
-- image dimensions
-- color channels
-- individual pixels
-- basic pixel manipulation
+- `cv2.imwrite()`
+- image file formats
+- lossless PNG encoding
+- file size and pixel equality
+- verifying saved image data
 
-This will connect NumPy array concepts with real-world image processing using OpenCV.
+This will show how OpenCV converts a NumPy image array into a new image file.
 
 ---
 
