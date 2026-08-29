@@ -101,3 +101,54 @@
     height: 42px;
   }
 }
+
+/* Table of Contents */
+.table-of-contents {
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+}
+
+.toc-title {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.table-of-contents ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.table-of-contents li {
+  margin: 0.35rem 0;
+}
+
+.table-of-contents a {
+  text-decoration: none;
+}
+
+.table-of-contents a:hover {
+  text-decoration: underline;
+}
+
+.table-of-contents .toc-level-3 {
+  margin-left: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.post-content h2,
+.post-content h3 {
+  scroll-margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .table-of-contents {
+    padding: 1rem;
+  }
+
+  .table-of-contents .toc-level-3 {
+    margin-left: 0.75rem;
+  }
+}

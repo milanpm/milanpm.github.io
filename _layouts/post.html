@@ -24,6 +24,10 @@ layout: default
       • {{ reading_time }} min read
     </p>
   </header>
+  <nav id="table-of-contents" class="table-of-contents" aria-label="Table of contents">
+    <div class="toc-title">Table of Contents</div>
+    <ul id="toc-list"></ul>
+  </nav>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
@@ -77,6 +81,40 @@ layout: default
     window.scrollTo({
       top: 0,
       behavior: "smooth"
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toc = document.getElementById("table-of-contents");
+    const tocList = document.getElementById("toc-list");
+    const headings = document.querySelectorAll(
+      ".post-content h2, .post-content h3"
+    );
+
+    if (!toc || !tocList || headings.length === 0) {
+      if (toc) {
+        toc.style.display = "none";
+      }
+      return;
+    }
+
+    headings.forEach((heading, index) => {
+      if (!heading.id) {
+        heading.id = `section-${index + 1}`;
+      }
+
+      const listItem = document.createElement("li");
+      const link = document.createElement("a");
+
+      listItem.className =
+        heading.tagName === "H3" ? "toc-level-3" : "toc-level-2";
+
+      link.href = `#${heading.id}`;
+      link.textContent = heading.textContent;
+
+      listItem.appendChild(link);
+      tocList.appendChild(listItem);
     });
   });
 </script>
