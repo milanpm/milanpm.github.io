@@ -21,16 +21,21 @@ a.post-category-badge:hover {
   filter: brightness(0.94);
 }
 
-.badge-image-processing {
-  background: #e8f1ff;
-  color: #1456a0;
-  border: 1px solid #b8d4f5;
+.post-category-badge.badge-image-processing {
+  background: #1769aa;
+  color: #ffffff;
+  border: 1px solid #0f568e;
 }
 
-.badge-pacs-dicom {
-  background: #f1eaff;
-  color: #6741a5;
-  border: 1px solid #d5c2f2;
+.post-category-badge.badge-pacs-dicom {
+  background: #7048b6;
+  color: #ffffff;
+  border: 1px solid #5c3999;
+}
+
+a.post-category-badge.badge-image-processing:visited,
+a.post-category-badge.badge-pacs-dicom:visited {
+  color: #ffffff;
 }
 
 .badge-default {
