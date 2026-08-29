@@ -23,6 +23,40 @@ layout: default
 
       • {{ reading_time }} min read
     </p>
+
+    {% if page.categories %}
+    <div class="post-taxonomy">
+      <div class="post-categories">
+        <span class="taxonomy-label">Categories:</span>
+        {% for category in page.categories %}
+        <span class="taxonomy-item">
+          {% case category %}
+          {% when "image-processing" %}
+          Image Processing
+          {% when "opencv" %}
+          OpenCV
+          {% else %}
+          {{ category | replace: "-", " " | capitalize }}
+          {% endcase %}
+        </span>
+        {% unless forloop.last %}·{% endunless %}
+        {% endfor %}
+      </div>
+
+      {% if page.tags %}
+      <div class="post-tags">
+        <span class="taxonomy-label">Tags:</span>
+        {% for tag in page.tags %}
+        <span class="taxonomy-item">
+          {{ tag }}
+        </span>
+        {% unless forloop.last %}·{% endunless %}
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
   </header>
   <nav id="table-of-contents" class="table-of-contents" aria-label="Table of contents">
     <div class="toc-title">Table of Contents</div>

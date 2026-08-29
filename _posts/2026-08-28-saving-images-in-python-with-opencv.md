@@ -3,7 +3,7 @@ layout: post
 title: "Saving Images in Python with OpenCV: Using cv2.imwrite()"
 date: 2026-08-28
 categories: [image-processing, opencv]
-tags: [python, opencv, image-processing, computer-vision, imwrite]
+tags: [Python, OpenCV, Image Processing, Computer Vision, imwrite]
 ---
 
 # Saving Images in Python with OpenCV

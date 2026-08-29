@@ -3,7 +3,7 @@ layout: post
 title: "NumPy Arrays in OpenCV: How Digital Images Are Represented"
 date: 2026-08-26
 categories: [image-processing, opencv]
-tags: [python, opencv, numpy, image-processing, computer-vision]
+tags: [Python, OpenCV, NumPy, Image Processing, Computer Vision]
 ---
 
 # Understanding Images as NumPy Arrays in Python and OpenCV
