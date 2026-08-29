@@ -127,7 +127,7 @@ from pydicom.dataset import Dataset
 
 
 def load_dicom(file_path: str) -> tuple[Dataset, np.ndarray]:
-    """DICOM 파일을 읽고 데이터셋과 픽셀 배열을 반환합니다."""
+    """Read a DICOM file and return the dataset and pixel array."""
     path = Path(file_path)
 
     if not path.is_file():
@@ -278,7 +278,7 @@ def apply_window(
     window_center: float,
     window_width: float,
 ) -> np.ndarray:
-    """Window Level/Width를 적용하여 8-bit 영상으로 변환합니다."""
+    """Apply Window Level and Width to convert the image to 8-bit format."""
     if window_width <= 0:
         raise ValueError("Window width must be greater than 0.")
 

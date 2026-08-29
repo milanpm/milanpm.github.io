@@ -455,7 +455,7 @@ The complete method is:
 
 ```python
 def save_png(self):
-    """현재 Window 설정이 적용된 영상을 PNG로 저장합니다."""
+    """Save the image with the current window settings applied as a PNG file."""
     if (
         self.pixel_array is None
         or not self.current_file_path

@@ -97,7 +97,7 @@ In this lesson, metadata access moves to `dicom_loader.py`.
 
 ```python
 def extract_metadata(dataset: Dataset) -> dict[str, str]:
-    """DICOM 데이터셋에서 주요 메타데이터를 추출합니다."""
+    """Extract key metadata from a DICOM dataset."""
     return {
         "Patient Name": str(dataset.get("PatientName", "N/A")),
         "Patient ID": str(dataset.get("PatientID", "N/A")),

@@ -383,7 +383,7 @@ The complete implementation is:
 
 ```python
 def search_metadata(self):
-    """태그 이름 또는 키워드로 DICOM 메타데이터를 검색합니다."""
+    """Search DICOM metadata by tag name or keyword."""
     if self.dataset is None:
         self.metadata_search_result.setText(
             "Please open a DICOM file first."

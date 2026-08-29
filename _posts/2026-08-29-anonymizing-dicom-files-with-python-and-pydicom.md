@@ -256,7 +256,7 @@ The complete dataset-level anonymization function is:
 
 ```python
 def anonymize_dataset(dataset: Dataset) -> Dataset:
-    """환자 식별정보와 private tag를 제거한 복사본을 반환합니다."""
+    """Return a copy with patient-identifying information and private tags removed."""
     anonymized = deepcopy(dataset)
 
     anonymized.PatientName = "ANONYMOUS"
@@ -287,7 +287,7 @@ The file-level function accepts input and output paths.
 
 ```python
 def save_anonymized_dicom(input_path: str, output_path: str) -> Path:
-    """DICOM 파일을 익명화하여 새로운 파일로 저장합니다."""
+    """Anonymize a DICOM file and save it as a new file."""
     source = Path(input_path)
     destination = Path(output_path)
 
