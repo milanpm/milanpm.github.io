@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Understanding Grayscale Image Histograms with OpenCV"
@@ -124,7 +123,7 @@ Matplotlib needs the individual pixel values as a single sequence. The example u
 img.ravel()
 ```
 
-This changes the view of the data from:
+`img.ravel()` returns the pixel values as a flattened one-dimensional array. It returns a view when possible and creates a copy only when necessary.
 
 ```text
 (600, 800)
@@ -142,7 +141,7 @@ Conceptually, the pixel rows are placed one after another:
 Row 1 → Row 2 → Row 3 → ... → Row 600
 ```
 
-The pixel values do not change. Only the way they are presented to the histogram function changes.
+The pixel values and their order remain unchanged; only their array representation becomes one-dimensional.
 
 ---
 
@@ -200,22 +199,43 @@ Here is the complete source code used in this lesson.
 
 ```python
 from pathlib import Path
+
 import cv2
 import matplotlib.pyplot as plt
+import numpy as np
+
 
 ROOT = Path(__file__).resolve().parents[3]
-image_path = "images/sample.png"
+image_path = ROOT / "images" / "sample.png"
 
-img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+img = cv2.imread(str(image_path), cv2.IMREAD_GRAYSCALE)
 
 if img is None:
-    print("Error: image file not found.")
-    exit()
+    raise FileNotFoundError(f"Could not load image: {image_path}")
 
-plt.hist(img.ravel(), bins=256, range=[0, 256])
+frequencies, _, _ = plt.hist(
+    img.ravel(),
+    bins=256,
+    range=[0, 256],
+)
+
+peak_intensity = int(np.argmax(frequencies))
+peak_frequency = int(frequencies[peak_intensity])
+
+print(f"Shape:           {img.shape}")
+print(f"Total pixels:    {img.size:,}")
+print(f"Minimum:         {int(img.min())}")
+print(f"Maximum:         {int(img.max())}")
+print(f"Mean:            {img.mean():.2f}")
+print(f"Median:          {np.median(img):.1f}")
+print(f"Peak intensity:  {peak_intensity}")
+print(f"Peak frequency:  {peak_frequency}")
+print(f"Histogram total: {int(frequencies.sum()):,}")
+
 plt.title("Grayscale Histogram")
 plt.xlabel("Pixel Value")
 plt.ylabel("Frequency")
+plt.xlim([0, 256])
 plt.show()
 ```
 
@@ -225,9 +245,7 @@ Run the example from the project root:
 python examples/03_Histogram/src/01_histogram.py
 ```
 
-A Matplotlib window displays the grayscale histogram.
-
-The current code calculates `ROOT`, but its relative image path does not use that variable. Therefore, the example should be executed from the project root directory.
+The script resolves the image path from the project root, prints the measured image statistics, and displays the grayscale histogram in a Matplotlib window.
 
 ---
 
@@ -339,9 +357,9 @@ The median is the middle value after all pixel intensities are sorted.
 Median = 129
 ```
 
-Because these values are relatively close, the image brightness distribution is not extremely skewed toward only dark or only bright pixels.
+Because the mean and median are relatively close, the center of the intensity distribution appears reasonably balanced. However, the complete histogram is needed to assess the distribution's shape and skewness.
 
-However, the multiple histogram peaks show that the distribution is not a single smooth group.
+The multiple histogram peaks also show that the distribution is not a single smooth group.
 
 The image contains several distinct intensity populations.
 
