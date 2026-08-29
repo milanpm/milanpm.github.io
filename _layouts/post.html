@@ -91,6 +91,25 @@ layout: default
     </div>
   </nav>
 
+  {% assign related_posts = site.categories[page.categories.first] %}
+  {% assign related_posts = related_posts | where_exp: "post", "post.url != page.url" %}
+
+  {% if related_posts.size > 0 %}
+  <section class="related-posts">
+    <h2>Related Posts</h2>
+
+    <ul>
+      {% for post in related_posts limit:3 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
   {% include giscus.html %}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

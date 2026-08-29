@@ -186,3 +186,32 @@
     font-size: 0.85rem;
   }
 }
+
+/* Related Posts */
+.related-posts {
+  margin: 2.5rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.related-posts h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.related-posts ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.related-posts li {
+  margin: 0.5rem 0;
+}
+
+.related-posts a {
+  text-decoration: none;
+}
+
+.related-posts a:hover {
+  text-decoration: underline;
+}
