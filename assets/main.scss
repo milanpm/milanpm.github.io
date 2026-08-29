@@ -3,6 +3,72 @@
 
 @import "minima";
 
+/* Category badges in the post list */
+.post-category-badge {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  padding: 0.22rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+a.post-category-badge:hover {
+  text-decoration: none;
+  filter: brightness(0.94);
+}
+
+.badge-image-processing {
+  background: #e8f1ff;
+  color: #1456a0;
+  border: 1px solid #b8d4f5;
+}
+
+.badge-pacs-dicom {
+  background: #f1eaff;
+  color: #6741a5;
+  border: 1px solid #d5c2f2;
+}
+
+.badge-default {
+  background: #f3f4f6;
+  color: #4b5563;
+  border: 1px solid #d7dbe0;
+}
+
+.post-list h3 {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+.category-archive {
+  padding-top: 0.5rem;
+  scroll-margin-top: 1.5rem;
+}
+
+.category-archive + .category-archive {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.category-post-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.category-post-list li {
+  margin: 0.75rem 0;
+}
+
+.category-post-list .post-meta {
+  display: block;
+  margin-top: 0.15rem;
+}
+
 /* Previous / Next post navigation */
 .post-navigation {
   display: flex;
@@ -52,6 +118,10 @@
 
 /* Mobile */
 @media screen and (max-width: 600px) {
+  .post-category-badge {
+    font-size: 0.74rem;
+  }
+s
   .post-navigation {
     flex-direction: column;
   }

@@ -13,6 +13,7 @@ show_excerpts: true
 header_pages:
   - about.md
   - projects.md
+  - categories.md
   - privacy.md
   - contact.md
 
