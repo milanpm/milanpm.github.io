@@ -8,10 +8,19 @@ permalink: /categories/
 
 Browse posts by their main subject.
 
+{% assign image_processing_count =
+  site.categories["image-processing"] | size %}
+{% assign pacs_dicom_count =
+  site.categories["medical-imaging"] | size %}
+
 <section id="image-processing" class="category-archive">
-  <h2>
+  <h2 class="category-archive-heading">
     <span class="post-category-badge badge-image-processing">
       Image Processing
+    </span>
+
+    <span class="category-post-count">
+      {{ image_processing_count }} posts
     </span>
   </h2>
 
@@ -33,9 +42,13 @@ Browse posts by their main subject.
 </section>
 
 <section id="pacs-dicom" class="category-archive">
-  <h2>
+  <h2 class="category-archive-heading">
     <span class="post-category-badge badge-pacs-dicom">
       PACS / DICOM
+    </span>
+
+    <span class="category-post-count">
+      {{ pacs_dicom_count }} posts
     </span>
   </h2>
 

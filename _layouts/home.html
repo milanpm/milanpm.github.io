@@ -10,11 +10,36 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">
-    {{ page.list_title | default: "Posts" }}
-  </h2>
+  {%- assign total_post_count = site.posts | size -%}
+  {%- assign image_processing_count =
+  site.categories["image-processing"] | size -%}
+  {%- assign pacs_dicom_count =
+  site.categories["medical-imaging"] | size -%}
 
-  <ul class="post-list">
+  <div class="post-list-header">
+    <h2 class="post-list-heading">
+      {{ page.list_title | default: "Posts" }}
+      <span class="total-post-count">{{ total_post_count }}</span>
+    </h2>
+
+    <nav class="category-count-summary" aria-label="Post categories">
+      <a class="category-count-item count-all" href="#post-list">
+        All <strong>{{ total_post_count }}</strong>
+      </a>
+
+      <a class="category-count-item count-image-processing" href="{{ '/categories/#image-processing' | relative_url }}">
+        Image Processing
+        <strong>{{ image_processing_count }}</strong>
+      </a>
+
+      <a class="category-count-item count-pacs-dicom" href="{{ '/categories/#pacs-dicom' | relative_url }}">
+        PACS / DICOM
+        <strong>{{ pacs_dicom_count }}</strong>
+      </a>
+    </nav>
+  </div>
+
+  <ul id="post-list" class="post-list">
     {%- for post in site.posts -%}
     <li>
       {%- assign primary_category = post.categories.first -%}
