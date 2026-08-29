@@ -9,6 +9,9 @@ layout: default
       {{ page.title | escape }}
     </h1>
 
+    {% assign words = content | strip_html | number_of_words %}
+    {% assign reading_time = words | plus: 199 | divided_by: 200 %}
+
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: site.minima.date_format }}
@@ -17,6 +20,8 @@ layout: default
       {%- if page.author -%}
       • {{ page.author }}
       {%- endif -%}
+
+      • {{ reading_time }} min read
     </p>
   </header>
 
