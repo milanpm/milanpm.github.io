@@ -82,7 +82,7 @@ For standard binary thresholding, the mode is `cv2.THRESH_BINARY`.
 
 The example begins with the same `800 × 600` color source image used in earlier lessons.
 
-![Original image before thresholding]({{ '/assets/images/posts/post-09/sample.png' | relative_url }})
+![Original image before thresholding]({{ '/assets/images/posts/post-08-binary-thresholding/sample.png' | relative_url }})
 
 OpenCV loads it as a BGR image and converts it to grayscale:
 
@@ -91,7 +91,7 @@ image = cv2.imread(str(image_path))
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 ```
 
-![Grayscale image used for binary thresholding]({{ '/assets/images/posts/post-09/grayscale.png' | relative_url }})
+![Grayscale image used for binary thresholding]({{ '/assets/images/posts/post-08-binary-thresholding/grayscale.png' | relative_url }})
 
 The grayscale image has the following measured properties:
 
@@ -191,7 +191,7 @@ The three windows make it easy to compare the source, grayscale, and binary imag
 
 ## 6. Understanding the Result
 
-![Binary image produced with a threshold of 127]({{ '/assets/images/posts/post-09/binary_threshold_127.png' | relative_url }})
+![Binary image produced with a threshold of 127]({{ '/assets/images/posts/post-08-binary-thresholding/binary_threshold_127.png' | relative_url }})
 
 The output image contains only two intensity values:
 
