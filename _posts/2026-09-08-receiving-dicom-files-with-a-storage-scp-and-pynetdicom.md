@@ -2,7 +2,7 @@
 layout: post
 title: "Receiving DICOM Files with a Storage SCP and pynetdicom"
 date: 2026-09-08 14:30:00 +0900
-categories: [Medical Imaging]
+categories: [medical-imaging]
 tags: [dicom, pacs, python, pydicom, pynetdicom, c-store, storage-scp]
 description: "Learn how to build a DICOM Storage SCP with pynetdicom, handle incoming C-STORE requests, save received datasets, and verify the stored files with pydicom."
 ---
