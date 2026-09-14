@@ -1,9 +1,8 @@
 ---
 layout: home
 title: Home
+heading: Alex Tech Blog
 ---
-
-# Alex Tech Blog
 
 Welcome to my technology and software engineering blog.
 

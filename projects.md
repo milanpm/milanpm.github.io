@@ -4,8 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
-# Projects
-
 This page contains hands-on projects developed as part of my continuous learning and engineering practice.
 
 ---
