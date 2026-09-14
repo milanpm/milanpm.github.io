@@ -4,6 +4,7 @@ title: "Understanding Grayscale Image Histograms with OpenCV"
 date: 2026-08-29 18:20:00 +0900
 categories: [image-processing, opencv]
 tags: [Python, OpenCV, Matplotlib, Image Processing, Histogram]
+description: "Create a 256-bin grayscale histogram with Matplotlib, calculate intensity statistics, and interpret image brightness and contrast."
 ---
 
 # Understanding Grayscale Image Histograms with OpenCV

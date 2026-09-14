@@ -4,6 +4,7 @@ title: "Saving Images in Python with OpenCV: Using cv2.imwrite()"
 date: 2026-08-28
 categories: [image-processing, opencv]
 tags: [Python, OpenCV, Image Processing, Computer Vision, imwrite]
+description: "Save processed images with cv2.imwrite(), check loading and saving results, and compare pixel data after a PNG round trip."
 ---
 
 # Saving Images in Python with OpenCV

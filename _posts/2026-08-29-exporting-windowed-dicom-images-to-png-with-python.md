@@ -4,6 +4,7 @@ title: "Exporting Windowed DICOM Images to PNG with Python"
 date: 2026-08-29 23:10:00 +0900
 categories: [medical-imaging, dicom]
 tags: [Python, DICOM, PACS, PNG Export, PyQt5, pydicom, Medical Imaging]
+description: "Export the current DICOM window settings as an 8-bit grayscale PNG through PyQt5 and understand how the rendering differs from source pixel data."
 ---
 
 # Exporting Windowed DICOM Images to PNG with Python

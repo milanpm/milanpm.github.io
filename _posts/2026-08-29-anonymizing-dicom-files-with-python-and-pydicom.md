@@ -4,6 +4,7 @@ title: "Anonymizing DICOM Files with Python and pydicom"
 date: 2026-08-29 20:10:00 +0900
 categories: [medical-imaging, dicom]
 tags: [Python, DICOM, PACS, pydicom, Anonymization, Medical Imaging]
+description: "Build a basic DICOM anonymization feature that edits selected identifiers in a copy, removes private tags, and preserves the source file."
 ---
 
 # Anonymizing DICOM Files with Python and pydicom

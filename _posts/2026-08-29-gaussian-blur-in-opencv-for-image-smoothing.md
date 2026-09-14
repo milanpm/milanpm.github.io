@@ -4,6 +4,7 @@ title: "Gaussian Blur in OpenCV: Weighted Image Smoothing"
 date: 2026-08-29 18:40:00 +0900
 categories: [image-processing, opencv]
 tags: [Python, OpenCV, Image Processing, Filtering, Gaussian Blur]
+description: "Apply a 5 by 5 Gaussian blur, examine kernel weights, and compare weighted smoothing with average blur using images and pixel statistics."
 ---
 
 # Gaussian Blur in OpenCV: Weighted Image Smoothing

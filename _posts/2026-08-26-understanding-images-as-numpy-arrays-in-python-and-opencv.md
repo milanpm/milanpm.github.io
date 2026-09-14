@@ -4,6 +4,7 @@ title: "NumPy Arrays in OpenCV: How Digital Images Are Represented"
 date: 2026-08-26
 categories: [image-processing, opencv]
 tags: [Python, OpenCV, NumPy, Image Processing, Computer Vision]
+description: "Understand images as NumPy arrays by examining pixel intensity, array shape, data types, and BGR color channels in OpenCV."
 ---
 
 # Understanding Images as NumPy Arrays in Python and OpenCV

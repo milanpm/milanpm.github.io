@@ -4,6 +4,7 @@ title: "Building a Basic DICOM Viewer with Python and PyQt5"
 date: 2026-08-29 19:10:00 +0900
 categories: [medical-imaging, dicom]
 tags: [Python, DICOM, PACS, PyQt5, pydicom, Medical Imaging]
+description: "Build a PyQt5 DICOM viewer that loads datasets with pydicom, applies window settings, and displays medical images and basic metadata."
 ---
 
 # Building a Basic DICOM Viewer with Python and PyQt5

@@ -4,6 +4,7 @@ title: "Convert Color Images to Grayscale with OpenCV"
 date: 2026-08-29
 categories: [image-processing, opencv]
 tags: [Python, OpenCV, Image Processing, Computer Vision, Grayscale]
+description: "Convert BGR images to grayscale with cv2.cvtColor(), inspect the resulting array and intensity range, and save the single-channel image."
 ---
 
 # Converting Color Images to Grayscale with OpenCV

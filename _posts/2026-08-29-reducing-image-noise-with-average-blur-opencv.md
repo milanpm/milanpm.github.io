@@ -4,6 +4,7 @@ title: "Reducing Image Noise with Average Blur in OpenCV"
 date: 2026-08-29 18:30:00 +0900
 categories: [image-processing, opencv]
 tags: [Python, OpenCV, Image Processing, Filtering, Average Blur]
+description: "Apply a 5 by 5 average blur with cv2.blur(), compare pixel differences, and examine the trade-off between smoothing and detail preservation."
 ---
 
 # Reducing Image Noise with Average Blur in OpenCV

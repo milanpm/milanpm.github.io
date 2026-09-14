@@ -4,6 +4,7 @@ title: "Python OpenCV for Beginners: Getting Started with Digital Image Processi
 date: 2026-08-25 23:30:00 +0900
 categories: [image-processing, opencv]
 tags: [Python, OpenCV, Image Processing, Computer Vision]
+description: "Explore the basic image-processing workflow and begin hands-on learning with Python and OpenCV, from loading images to grayscale conversion."
 ---
 
 # Learning Digital Image Processing with Python and OpenCV

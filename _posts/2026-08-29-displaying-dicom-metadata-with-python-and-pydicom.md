@@ -4,6 +4,7 @@ title: "Displaying DICOM Metadata with Python and pydicom"
 date: 2026-08-29 21:10:00 +0900
 categories: [medical-imaging, dicom]
 tags: [Python, DICOM, PACS, pydicom, Metadata, PyQt5, Medical Imaging]
+description: "Extract patient, study, image geometry, and display attributes with pydicom and show them in a PyQt5 viewer using a dedicated metadata function."
 ---
 
 # Displaying DICOM Metadata with Python and pydicom

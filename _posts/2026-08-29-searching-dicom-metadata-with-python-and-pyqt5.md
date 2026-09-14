@@ -4,6 +4,7 @@ title: "Searching DICOM Metadata with Python and PyQt5"
 date: 2026-08-29 22:10:00 +0900
 categories: [medical-imaging, dicom]
 tags: [Python, DICOM, PACS, pydicom, Metadata Search, PyQt5, Medical Imaging]
+description: "Add case-insensitive DICOM metadata search by tag name and keyword to a PyQt5 viewer, with checks for empty input and missing datasets."
 ---
 
 # Searching DICOM Metadata with Python and PyQt5

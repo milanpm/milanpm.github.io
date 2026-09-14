@@ -72,7 +72,8 @@ layout: default
       </span>
 
       {%- if site.show_excerpts -%}
-      {{ post.excerpt }}
+      {%- assign post_summary = post.description | default: post.excerpt -%}
+      <p class="post-summary">{{ post_summary | strip_html | normalize_whitespace | escape }}</p>
       {%- endif -%}
     </li>
     {%- endfor -%}
