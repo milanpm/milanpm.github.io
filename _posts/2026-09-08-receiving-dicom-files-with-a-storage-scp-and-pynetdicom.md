@@ -278,7 +278,7 @@ The complete project source code is available on GitHub:
 
 ## Next Step
 
-The next step is to use **C-FIND** to query a remote PACS for DICOM studies.
+The next step is [Querying DICOM Studies with C-FIND and pynetdicom]({% post_url 2026-09-09-querying-dicom-studies-with-c-find-and-pynetdicom %}).
 
 This will move the project from basic connectivity and storage operations to DICOM Query/Retrieve.
 
