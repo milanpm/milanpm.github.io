@@ -2,7 +2,7 @@
 layout: post
 title: "Inspecting Object Rotation Alignment Using OpenCV"
 date: 2026-09-21 16:00:00 +0900
-categories: [Image Processing, OpenCV]
+categories: [image-processing, opencv]
 tags: [opencv, computer-vision, contour, image-moments, rotation, alignment, inspection]
 description: "Learn how to measure contour orientation with image moments, calculate angular error, and classify rotated objects using a reference angle and tolerance."
 ---
