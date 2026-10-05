@@ -1,7 +1,8 @@
 ---
+layout: post
 title: "Inspecting Object Position and Rotation Alignment Using OpenCV"
 date: 2026-10-06
-categories: [Image Processing, OpenCV]
+categories: [image-processing, opencv]
 tags: [OpenCV, Python, Contours, Object Inspection, Position Alignment, Rotation Alignment]
 description: "Learn how to inspect both object position and rotation alignment using contour-based measurements in OpenCV."
 ---
