@@ -7,6 +7,9 @@ tags: [OpenCV, Python, Contours, Object Inspection, Position Alignment, Rotation
 description: "Learn how to inspect both object position and rotation alignment using contour-based measurements in OpenCV."
 ---
 
+<a id="post-top"></a>
+
+
 In the previous post, I inspected an object's **rotation alignment** by comparing its measured angle with a reference angle.
 
 In this post, I combine **position inspection** and **rotation inspection** to determine whether an object is correctly positioned and oriented.
@@ -131,4 +134,4 @@ The source code for this experiment is available in the `01_ImageProcessing` Git
 
 In the next post, I will inspect **object size** and compare the measured width and height with reference dimensions and tolerances.
 
-[Next → Inspecting Object Size Using OpenCV]({% post_url 2026-10-13-inspecting-object-size-using-opencv %})
+[← Previous: Object Rotation Inspection]({% post_url 2026-09-21-inspecting-object-rotation-alignment-using-opencv %}) · [↑ Back to Top](#post-top) · [Next: Object Size Inspection →]({% post_url 2026-10-13-inspecting-object-size-using-opencv %})
