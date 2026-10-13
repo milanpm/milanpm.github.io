@@ -130,3 +130,5 @@ The source code for this experiment is available in the `01_ImageProcessing` Git
 ## Next Step
 
 In the next post, I will inspect **object size** and compare the measured width and height with reference dimensions and tolerances.
+
+[Next → Inspecting Object Size Using OpenCV]({% post_url 2026-10-13-inspecting-object-size-using-opencv %})
